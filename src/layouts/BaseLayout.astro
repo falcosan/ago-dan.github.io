@@ -5,6 +5,14 @@ import Footer from "../components/global/Footer.astro";
 
 <html lang="en">
   <head>
+    <script>
+      import { getBrowserLocales } from "../i18n/utils.ts";
+      const locale = getBrowserLocales()?.[0];
+      if (locale) {
+        if (window.location.pathname !== `/${locale}`)
+          window.location.replace(`/${locale}`);
+      }
+    </script>
     <BaseHead />
   </head>
 

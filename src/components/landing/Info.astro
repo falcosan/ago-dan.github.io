@@ -1,58 +1,63 @@
-<main>
-  <div class="relative mx-auto px-8 max-w-7xl py-12 md:px-12">
-    <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2">
-      <figure>
-        <img
-          class="w-full rounded-3xl shadow-2xl aspect-[16/11] object-cover object-center"
-          src="https://www.monnoroma.it/img_rionemonti/chiesasantagatadeigoti.jpg"
-          alt=""
-          width="1310"
-          height="873"
-        />
-        <div class="mt-4 px-6">
-          <div class="w-full">
-            <div class="flex items-center gap-2 w-full justify-between">
-              <p class="text-sm text-sage-500">Church</p>
-              <p class="text-base text-moss-500">15.30 hs</p>
-            </div>
-            <p class="mt-1 text-lg font-medium leading-6 text-white">
-              Chiesa di Sant'Agata dei Goti
-            </p>
-            <a
-              href="https://maps.app.goo.gl/FKUJNT7De5nBV3Fk6"
-              class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
-            >
-              Via Mazzarino, 16, 00184 Roma
-            </a>
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="relative mx-auto px-8 max-w-7xl py-12 md:px-12">
+  <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2">
+    <figure>
+      <img
+        class="w-full rounded-3xl shadow-2xl aspect-[16/11] object-cover object-center"
+        src="https://www.monnoroma.it/img_rionemonti/chiesasantagatadeigoti.jpg"
+        alt=""
+        width="1310"
+        height="873"
+      />
+      <div class="mt-4 px-6">
+        <div class="w-full">
+          <div class="flex items-center gap-2 w-full justify-between">
+            <p class="text-sm text-sage-500">{t("church")}</p>
+            <p class="text-base text-moss-500">{t("hourChurch")}</p>
           </div>
+          <p class="mt-1 text-lg font-medium leading-6 text-white">
+            Chiesa di Sant'Agata dei Goti
+          </p>
+          <a
+            href="https://maps.app.goo.gl/FKUJNT7De5nBV3Fk6"
+            class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
+          >
+            Via Mazzarino, 16, 00184 Roma
+          </a>
         </div>
-      </figure>
-      <figure>
-        <img
-          class="w-full rounded-3xl shadow-2xl aspect-[16/11] object-cover object-center"
-          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/69/fe/c7/la-porta-del-principe.jpg?w=600&h=-1&s=1"
-          alt=""
-          width="1310"
-          height="873"
-        />
-        <div class="mt-4 px-6">
-          <div class="w-full">
-            <div class="flex items-center gap-2 w-full justify-between">
-              <p class="text-sm text-sage-500">Celebration</p>
-              <p class="text-base text-moss-500">18.30 hs</p>
-            </div>
-            <p class="mt-1 text-lg font-medium leading-6 text-white">
-              La Porta Del Principe
-            </p>
-            <a
-              href="https://maps.app.goo.gl/eqkxMsoLXQJ2dPJP7"
-              class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
-            >
-              Via Portuense, 1585, 00148 Roma
-            </a>
+      </div>
+    </figure>
+    <figure>
+      <img
+        class="w-full rounded-3xl shadow-2xl aspect-[16/11] object-cover object-center"
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/69/fe/c7/la-porta-del-principe.jpg?w=600&h=-1&s=1"
+        alt=""
+        width="1310"
+        height="873"
+      />
+      <div class="mt-4 px-6">
+        <div class="w-full">
+          <div class="flex items-center gap-2 w-full justify-between">
+            <p class="text-sm text-sage-500">{t("celebration")}</p>
+            <p class="text-base text-moss-500">{t("hourCelebration")}</p>
           </div>
+          <p class="mt-1 text-lg font-medium leading-6 text-white">
+            La Porta Del Principe
+          </p>
+          <a
+            href="https://maps.app.goo.gl/eqkxMsoLXQJ2dPJP7"
+            class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
+          >
+            Via Portuense, 1585, 00148 Roma
+          </a>
         </div>
-      </figure>
-    </div>
+      </div>
+    </figure>
   </div>
-</main>
+</div>
