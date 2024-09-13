@@ -14,7 +14,12 @@ export function useTranslations(lang: keyof typeof ui) {
 
 export function getBrowserLocales(options = {}) {
   const defaultOptions = {
-    languageCodeOnly: false,
+    languageCodeOnly: true,
+  };
+
+  const opt = {
+    ...defaultOptions,
+    ...options,
   };
 
   const browserLocales =
@@ -26,7 +31,10 @@ export function getBrowserLocales(options = {}) {
 
   return browserLocales.map((locale) => {
     const trimmedLocale = locale.trim();
+    const codeLocale = trimmedLocale.split(/-|_/)[0];
 
-    return trimmedLocale.split(/-|_/)[0];
+    if (codeLocale === "en") return "";
+
+    return opt.languageCodeOnly ? codeLocale : trimmedLocale;
   });
 }

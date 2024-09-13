@@ -8,9 +8,9 @@ import Footer from "../components/global/Footer.astro";
     <script>
       import { getBrowserLocales } from "../i18n/utils.ts";
       const locale = getBrowserLocales()?.[0];
-      if (locale) {
-        if (window.location.pathname !== `/${locale}`)
-          window.location.replace(`/${locale}`);
+
+      if (locale != null && location.pathname !== `/${locale}`) {
+        location.replace(`/${locale}`);
       }
     </script>
     <BaseHead />
