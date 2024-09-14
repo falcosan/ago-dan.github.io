@@ -9,7 +9,12 @@ const t = useTranslations(lang);
   <div
     class="grid grid-cols-1 gap-x-10 gap-y-14 lg:grid-cols-2 xl:grid-cols-3 items-center justify-items-center"
   >
-    <figure class="max-w-sm">
+    <figure class="relative max-w-sm">
+      <div
+        class="absolute -left-16 -top-16 w-44 overflow-hidden pointer-events-none"
+      >
+        <canvas id="marriage"></canvas>
+      </div>
       <img
         class="w-full rounded-3xl shadow-2xl aspect-[16/12] object-cover object-center"
         src="https://www.monnoroma.it/img_rionemonti/chiesasantagatadeigoti.jpg"
@@ -35,8 +40,13 @@ const t = useTranslations(lang);
       </div>
     </figure>
     <figure
-      class="max-w-sm flex flex-col items-center justify-center row-start-2 row-end-2 col-span-full xl:col-auto xl:row-auto"
+      class="relative max-w-sm flex flex-col items-center justify-center row-start-2 row-end-2 col-span-full xl:col-auto xl:row-auto"
     >
+      <div
+        class="absolute bottom-10 sm:bottom-12 -right-7 w-44 overflow-hidden pointer-events-none"
+      >
+        <canvas id="meet"></canvas>
+      </div>
       <img
         class="w-56 rounded-3xl shadow-2xl aspect-[11/16] object-cover object-center"
         src="/fontaine.webp"
@@ -60,9 +70,11 @@ const t = useTranslations(lang);
         </div>
       </div>
     </figure>
-    <figure class="relative max-w-sm mt-16 lg:mt-0">
-      <div class="absolute -top-28 right-0 w-44 sm:w-48">
-        <canvas id="canvas"></canvas>
+    <figure class="relative max-w-sm">
+      <div
+        class="absolute -top-24 -right-10 w-44 overflow-hidden pointer-events-none"
+      >
+        <canvas id="clebration"></canvas>
       </div>
       <img
         class="w-full rounded-3xl shadow-2xl aspect-[16/12] object-cover object-center"

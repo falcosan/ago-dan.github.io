@@ -1,0 +1,26 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<main class="relative overflow-hidden">
+  <div class="relative mx-auto px-8 max-w-7xl py-24 md:px-12">
+    <div class="mx-auto text-center">
+      <h1
+        class="text-sage-500 font-bold text-4xl md:text-4xl lg:text-5xl tracking-tight"
+      >
+        <span class="block"
+          >Thank you for the sushi 🍣 💰 <br /><br /> We are grateful for everything
+          you' ve done to come celebrate with us. Your presence is the greatest gift.
+          We are hoping to make it to Japan in 2025 for our delayed honeymoon. If
+          you want to help us with our dream trip, send us your contribution here:
+          <br />
+          <br />
+          USA - Revolut<br />Europe - Caixa</span
+        >
+      </h1>
+    </div>
+  </div>
+</main>
