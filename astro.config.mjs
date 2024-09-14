@@ -6,6 +6,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  trailingSlash: "never",
   site: "https://ago-dan.com",
   integrations: [sitemap()],
 });
