@@ -6,55 +6,81 @@ const t = useTranslations(lang);
 ---
 
 <div class="relative mx-auto px-8 max-w-7xl py-12 md:px-12">
-  <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2">
-    <figure>
+  <div
+    class="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3 items-center justify-items-center"
+  >
+    <figure class="max-w-sm">
       <img
-        class="w-full rounded-3xl shadow-2xl aspect-[16/11] object-cover object-center"
+        class="w-full rounded-3xl shadow-2xl aspect-[16/12] object-cover object-center"
         src="https://www.monnoroma.it/img_rionemonti/chiesasantagatadeigoti.jpg"
-        alt=""
-        width="1310"
-        height="873"
       />
-      <div class="mt-4 px-6">
+      <div class="mt-4">
         <div class="w-full">
           <div class="flex items-center gap-2 w-full justify-between">
             <p class="text-sm text-sage-500">{t("church")}</p>
             <p class="text-base text-moss-500">{t("hourChurch")}</p>
           </div>
-          <p class="mt-1 text-lg font-medium leading-6 text-white">
+          <p class="mt-3 text-lg font-medium leading-6 text-white">
             Chiesa di Sant'Agata dei Goti
           </p>
           <a
             href="https://maps.app.goo.gl/FKUJNT7De5nBV3Fk6"
+            target="_blank"
+            rel="noopener noreferrer"
             class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
           >
-            Via Mazzarino, 16, 00184 Roma
+            Via Mazzarino, 16
           </a>
         </div>
       </div>
     </figure>
-    <figure>
+    <figure
+      class="max-w-sm flex flex-col items-center justify-center row-start-2 row-end-2 col-span-full xl:col-auto xl:row-auto"
+    >
       <img
-        class="w-full rounded-3xl shadow-2xl aspect-[16/11] object-cover object-center"
-        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/69/fe/c7/la-porta-del-principe.jpg?w=600&h=-1&s=1"
-        alt=""
-        width="1310"
-        height="873"
+        class="w-56 rounded-3xl shadow-2xl aspect-[11/16] object-cover object-center"
+        src="/fontaine.webp"
       />
-      <div class="mt-4 px-6">
+      <div class="mt-4">
+        <div class="w-full">
+          <div class="flex items-center gap-2 w-full justify-between">
+            <p class="text-sm text-sage-500">{t("photo")}</p>
+          </div>
+          <p class="mt-3 text-lg font-medium leading-6 text-white">
+            Fontana dei Catecumeni
+          </p>
+          <a
+            href="https://maps.app.goo.gl/whtQAHt2wfR84UzU7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
+          >
+            Piazza della Madonna dei Monti
+          </a>
+        </div>
+      </div>
+    </figure>
+    <figure class="max-w-sm">
+      <img
+        class="w-full rounded-3xl shadow-2xl aspect-[16/12] object-cover object-center"
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/69/fe/c7/la-porta-del-principe.jpg?w=600&h=-1&s=1"
+      />
+      <div class="mt-4">
         <div class="w-full">
           <div class="flex items-center gap-2 w-full justify-between">
             <p class="text-sm text-sage-500">{t("celebration")}</p>
             <p class="text-base text-moss-500">{t("hourCelebration")}</p>
           </div>
-          <p class="mt-1 text-lg font-medium leading-6 text-white">
+          <p class="mt-3 text-lg font-medium leading-6 text-white">
             La Porta Del Principe
           </p>
           <a
             href="https://maps.app.goo.gl/eqkxMsoLXQJ2dPJP7"
+            target="_blank"
+            rel="noopener noreferrer"
             class="block mt-2 pt-2 border-t border-sage-600 lg:text-lg font-medium leading-6 hover:underline underline-offset-4 text-sage-300"
           >
-            Via Portuense, 1585, 00148 Roma
+            Via Portuense, 1585
           </a>
         </div>
       </div>
