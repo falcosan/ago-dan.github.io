@@ -15,6 +15,7 @@ export function useTranslations(lang: keyof typeof ui) {
 export function getBrowserLocales(options = {}) {
   const defaultOptions = {
     languageCodeOnly: true,
+    locales: ["en", "es", "it"],
   };
 
   const opt = {
@@ -29,12 +30,16 @@ export function getBrowserLocales(options = {}) {
 
   if (!browserLocales) return;
 
-  return browserLocales.map((locale) => {
-    const trimmedLocale = locale.trim();
-    const codeLocale = trimmedLocale.split(/-|_/)[0];
+  return browserLocales
+    .map((locale) => {
+      const trimmedLocale = locale.trim();
+      const codeLocale = trimmedLocale.split(/-|_/)[0];
 
-    if (codeLocale === "en") return "";
+      if (codeLocale === "en") return "";
 
-    return opt.languageCodeOnly ? codeLocale : trimmedLocale;
-  });
+      return opt.languageCodeOnly ? codeLocale : trimmedLocale;
+    })
+    .filter(
+      (locale) => locale === "" || defaultOptions.locales.includes(locale)
+    );
 }
