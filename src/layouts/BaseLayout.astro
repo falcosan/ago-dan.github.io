@@ -30,7 +30,7 @@ import Gift from "../components/landing/Gift.astro";
       ) => {
         const canvas = document.getElementById(canvasId) as HTMLCanvasElement;
         if (canvas?.getContext) {
-          const scale = 1.3;
+          const scale = 1.1;
           const ctx = canvas.getContext("2d");
           if (!ctx) return;
 
@@ -79,7 +79,7 @@ import Gift from "../components/landing/Gift.astro";
             invertY(25 * scale)
           );
           ctx.font =
-            "small-caps bold 38px ui-sans-serif, system-ui, sans-serif";
+            "small-caps bold 30px ui-sans-serif, system-ui, sans-serif";
           ctx.fillStyle = "#95A58D";
           ctx.fill();
           ctx.textAlign = "center";
@@ -98,8 +98,8 @@ import Gift from "../components/landing/Gift.astro";
       };
 
       drawCanvas("marriage", "👰🏻‍♀️🤵🏻‍♂️", 60, true);
-      drawCanvas("meet", "💃🏻🕺🏻", 65, false, true);
-      drawCanvas("clebration", "🍾🎂", 65);
+      drawCanvas("meet", "💃🏻🕺🏻", 62.5, false, true);
+      drawCanvas("clebration", "🍾🎂", 62.5);
     </script>
     <BaseHead />
   </head>
