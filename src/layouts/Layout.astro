@@ -6,6 +6,7 @@ import Hero from "../components/landing/Hero.astro";
 import Info from "../components/landing/Info.astro";
 import Ride from "../components/landing/Ride.astro";
 import Gift from "../components/landing/Gift.astro";
+import Favicon from "../components/global/Favicon";
 ---
 
 <html lang="en">
@@ -104,6 +105,7 @@ import Gift from "../components/landing/Gift.astro";
       drawCanvas("clebration", "🍾🎂", 62.5);
     </script>
     <Head />
+    <Favicon client:only />
   </head>
 
   <body class="bg-olive-500">
