@@ -24,9 +24,7 @@ export function getBrowserLocales(options = {}) {
   };
 
   const browserLocales =
-    window?.navigator.languages == null
-      ? [navigator.language]
-      : navigator.languages;
+    navigator.languages == null ? [navigator.language] : navigator.languages;
 
   if (!browserLocales) return;
 
