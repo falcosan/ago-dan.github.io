@@ -1,8 +1,10 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
+import Head from "../components/global/Head.astro";
+import Divider from "../components/global/Divider.astro";
 import Footer from "../components/global/Footer.astro";
 import Hero from "../components/landing/Hero.astro";
 import Info from "../components/landing/Info.astro";
+import Ride from "../components/landing/Ride.astro";
 import Gift from "../components/landing/Gift.astro";
 ---
 
@@ -101,12 +103,14 @@ import Gift from "../components/landing/Gift.astro";
       drawCanvas("meet", "💃🏻🕺🏻", 62.5, false, true);
       drawCanvas("clebration", "🍾🎂", 62.5);
     </script>
-    <BaseHead />
+    <Head />
   </head>
 
   <body class="bg-olive-500">
     <Hero />
     <Info />
+    <Ride />
+    <Divider />
     <Gift />
     <Footer />
   </body>
