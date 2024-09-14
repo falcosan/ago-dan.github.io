@@ -17,6 +17,61 @@ import Footer from "../components/global/Footer.astro";
       ) {
         location.assign(path);
       }
+
+      const draw = () => {
+        const canvas = document.getElementById("canvas") as HTMLCanvasElement;
+        if (canvas?.getContext) {
+          const scale = 1.4;
+          const ctx = canvas.getContext("2d");
+          if (!ctx) return;
+
+          canvas.width = 150 * scale;
+          canvas.height = 150 * scale;
+
+          ctx.moveTo(75 * scale, 25 * scale);
+          ctx.quadraticCurveTo(
+            25 * scale,
+            25 * scale,
+            25 * scale,
+            62.5 * scale
+          );
+          ctx.quadraticCurveTo(
+            25 * scale,
+            100 * scale,
+            50 * scale,
+            100 * scale
+          );
+          ctx.quadraticCurveTo(
+            50 * scale,
+            120 * scale,
+            65 * scale,
+            100 * scale
+          );
+          ctx.quadraticCurveTo(
+            125 * scale,
+            100 * scale,
+            125 * scale,
+            62.5 * scale
+          );
+          ctx.quadraticCurveTo(125 * scale, 25 * scale, 75 * scale, 25 * scale);
+          ctx.font =
+            "italic small-caps bold 18px ui-sans-serif, system-ui, sans-serif";
+          ctx.fillStyle = "#95A58D";
+          ctx.fill();
+          ctx.fillStyle = "#FFFFFF";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          const x = 75 * scale;
+          const y = 55 * scale;
+          const lineheight = 20;
+          const text = "If you need,\nwe have a bus.".split("\n");
+          for (let i = 0; i < text.length; i++) {
+            ctx.fillText(text[i], x, y + i * lineheight);
+          }
+        }
+      };
+
+      draw();
     </script>
     <BaseHead />
   </head>

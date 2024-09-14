@@ -5,9 +5,9 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="relative mx-auto px-8 max-w-7xl py-12 md:px-12">
+<div class="mx-auto px-8 max-w-7xl py-12 md:px-12">
   <div
-    class="grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-3 items-center justify-items-center"
+    class="grid grid-cols-1 gap-x-10 gap-y-14 lg:grid-cols-2 xl:grid-cols-3 items-center justify-items-center"
   >
     <figure class="max-w-sm">
       <img
@@ -60,7 +60,10 @@ const t = useTranslations(lang);
         </div>
       </div>
     </figure>
-    <figure class="max-w-sm">
+    <figure class="relative max-w-sm mt-16 lg:mt-0">
+      <div class="absolute -top-28 right-0 w-44 sm:w-48">
+        <canvas id="canvas"></canvas>
+      </div>
       <img
         class="w-full rounded-3xl shadow-2xl aspect-[16/12] object-cover object-center"
         src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/69/fe/c7/la-porta-del-principe.jpg?w=600&h=-1&s=1"
