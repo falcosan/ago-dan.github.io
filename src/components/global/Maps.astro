@@ -2,21 +2,23 @@
 const { source, text, link } = Astro.props;
 ---
 
-<a
-  href={link}
-  class="flex flex-col items-center hover:underline underline-offset-4 cursor-pointer text-sage-300"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <div
-    class="rounded-full relative overflow-hidden aspect-square h-full w-full max-w-80 max-h-80 pointer-events-none shadow-2xl"
+<div class="flex justify-center">
+  <a
+    href={link}
+    class="aspect-square h-full w-full max-w-80 max-h-80 hover:underline underline-offset-4 cursor-pointer text-sage-300"
+    target="_blank"
+    rel="noopener noreferrer"
   >
-    <iframe
-      class="w-[200%] h-[200%] absolute -left-2/4 -bottom-2/4 pointer-events-none opacity-85"
-      allowfullscreen
-      referrerpolicy="no-referrer-when-downgrade"
-      src={source}></iframe>
-  </div>
+    <div
+      class="h-full w-full rounded-full relative overflow-hidden pointer-events-none shadow-2xl"
+    >
+      <iframe
+        class="w-[200%] h-[200%] absolute -left-2/4 -bottom-2/4 pointer-events-none opacity-85"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src={source}></iframe>
+    </div>
 
-  <span class="block mt-3 pt-3 text-xl font-medium leading-6">{text}</span>
-</a>
+    <span class="block mt-3 pt-3 text-xl font-medium leading-6">{text}</span>
+  </a>
+</div>
