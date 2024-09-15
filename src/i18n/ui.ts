@@ -36,14 +36,14 @@ export const ui = {
   },
   it: {
     hello: "Ciao!",
-    description: "Ti parlano Agostina e Daniele",
+    description: "da Ago e Daniele",
     church: "Chiesa",
     hourChurch: "15.30",
     photo: "Foto",
     celebration: "Ricevimento",
     hourCelebration: "18.30",
     rideFirst:
-      "Non un passaggio per andare al ricevimento?\nCi sarà un autobus ad aspettarti qui alle 17:30!",
+      "Non hai un passaggio per andare al ricevimento?\nCi sarà un autobus ad aspettarti qui alle 17:30!",
     rideSecond:
       "Ti riporterà a quest'altro indirizzo\nuna volta terminata la festa, intorno alle 3 del mattino.",
     gift: "Grazie per il sushi!\n\nSiamo grati per tutto quello che hai fatto per venire a festeggiare con noi. La tua presenza è il regalo più grande.\n\nSperiamo di riuscire ad andare in Giappone nel 2025 per la nostra luna di miele posticipata. Se vuoi aiutarci a realizzare il nostro viaggio da sogno, inviaci il tuo contributo qui:",
