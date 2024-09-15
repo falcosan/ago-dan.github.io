@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 
 function getRandomEmoji() {
-  const emoji = ['👰🏻‍♀️', '🎂', '💍', '🤵🏻‍♂️', '💒', '🦦'];
+  const emoji = ['👰🏻‍♀️', '🎂', '💍', '🤵🏻‍♂️', '💒', '🦦', '🍾', '🎎'];
   const count = emoji.length;
   const random = Math.floor(Math.random() * count);
   return emoji[random];

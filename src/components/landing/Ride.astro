@@ -1,14 +1,30 @@
 ---
 import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+import Maps from "../global/Maps.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <div class="relative mx-auto px-8 max-w-7xl py-24 md:px-12">
-  <div class="mx-auto text-center">
-    <h3 class="text-sage-500 font-bold text-4xl whitespace-pre-line">
-      {t("ride")}
+  <div class="mx-auto text-center whitespace-pre-line">
+    <h3 class="text-7xl mb-8 antialiased">🚌</h3>
+    <h3 class="text-4xl text-sage-500 font-bold mb-16">
+      {t("rideFirst")}
     </h3>
+    <Maps
+      class:list={["mb-16"]}
+      text="Via degli Annibaldi, 4"
+      link="https://maps.app.goo.gl/H7fThFttg4WBTtRc6"
+      source="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d674.405548772437!2d12.490416403110288!3d41.89414027722007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b16ad79def%3A0x37431d958fc0e86!2sVia%20degli%20Annibaldi%2C%204%2C%2000184%20Roma%20RM%2C%20Italia!5e0!3m2!1ses!2ses!4v1726425536403!5m2!1ses!2ses"
+    />
+    <h3 class="text-4xl text-sage-500 font-bold my-16">
+      {t("rideSecond")}
+    </h3>
+    <Maps
+      text="Via Arenula, 56"
+      link="https://maps.app.goo.gl/UXDKrXVanSRHrzeeA"
+      source="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d742.5115905034077!2d12.474596542205052!3d41.89186001158878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDUzJzMwLjciTiAxMsKwMjgnMjguNiJF!5e0!3m2!1ses!2ses!4v1726426960286!5m2!1ses!2ses"
+    />
   </div>
 </div>
