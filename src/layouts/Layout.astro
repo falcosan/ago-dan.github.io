@@ -7,6 +7,14 @@ import Info from "../components/landing/Info.astro";
 import Ride from "../components/landing/Ride.astro";
 import Gift from "../components/landing/Gift.astro";
 import Favicon from "../components/global/Favicon";
+import Slider from "../components/global/Slider.astro";
+
+let images = [];
+const totalImages = 41;
+
+for (let i = 1; i <= totalImages; i++) {
+  images.push(`/${i}.jpeg`);
+}
 ---
 
 <html lang="en">
@@ -114,6 +122,8 @@ import Favicon from "../components/global/Favicon";
     <Ride />
     <Divider />
     <Gift />
+    <Divider />
+    <Slider images={images} />
     <Footer />
   </body>
 </html>

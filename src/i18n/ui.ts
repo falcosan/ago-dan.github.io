@@ -36,7 +36,7 @@ export const ui = {
   },
   it: {
     hello: "Ciao!",
-    description: "da Ago e Daniele",
+    description: "Siamo Agostina e Daniele",
     church: "Chiesa",
     hourChurch: "15.30",
     photo: "Foto",

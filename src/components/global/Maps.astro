@@ -5,12 +5,12 @@ const { source, text, link } = Astro.props;
 <div class="flex justify-center">
   <a
     href={link}
-    class="aspect-square h-full w-full max-w-80 max-h-80 hover:underline underline-offset-4 cursor-pointer text-sage-300"
+    class="map aspect-square h-full w-full max-w-80 max-h-80 hover:underline underline-offset-4 cursor-pointer text-sage-300"
     target="_blank"
     rel="noopener noreferrer"
   >
     <div
-      class="h-full w-full rounded-full relative overflow-hidden pointer-events-none shadow-2xl"
+      class="h-full w-full rounded-full relative overflow-hidden pointer-events-none shadow-2xl border-3 border-dashed bg-sage-200/25"
     >
       <iframe
         class="w-[200%] h-[200%] absolute -left-2/4 -bottom-2/4 pointer-events-none opacity-85"

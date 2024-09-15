@@ -1,0 +1,42 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  images: string[];
+  duration?: string;
+}
+
+const { images, duration = "180s" } = Astro.props;
+---
+
+<div class="slider pt-24 overflow-hidden">
+  <div class="slides flex w-max">
+    {
+      images
+        .concat(images)
+        .map((img) => (
+          <img
+            class="slide w-screen max-w-xs sm:max-w-sm md:max-w-md xl:max-w-lg aspect-square object-cover mr-5 rounded-4xl"
+            src={img}
+          />
+        ))
+    }
+  </div>
+</div>
+
+<style define:vars={{ duration }}>
+  .slides {
+    animation: slider-slide-left var(--duration) linear infinite;
+  }
+
+  .slides:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes slider-slide-left {
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
