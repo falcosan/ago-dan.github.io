@@ -8,7 +8,7 @@ export const defaultLang = "en";
 export const ui = {
   en: {
     hello: "Hello from Agostina and Daniele!",
-    description: "The wedding date is close",
+    description: "The wedding day is almost here...",
     church: "Church",
     hourChurch: "3:30 pm",
     photo: "Photos",
@@ -22,8 +22,8 @@ export const ui = {
     nameGift: "NAME",
   },
   es: {
-    hello: "¡Hola desde Agostina y Daniele!",
-    description: "La fecha de nuestro casorio se acerca.",
+    hello: "¡Hola de Ago y Daniele!",
+    description: "Ya llega el día del casorio...",
     church: "Iglesia",
     hourChurch: "15.30",
     photo: "Fotos",
@@ -38,7 +38,7 @@ export const ui = {
   },
   it: {
     hello: "Ciao da Agostina e Daniele!",
-    description: "La data del nostro matrimonio è vicina",
+    description: "Il giorno del matrimonio è vicino...",
     church: "Chiesa",
     hourChurch: "15.30",
     photo: "Foto",
