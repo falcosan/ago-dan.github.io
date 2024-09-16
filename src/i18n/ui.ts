@@ -18,7 +18,7 @@ export const ui = {
       "Need a ride to the wedding venue?\nThere will be a bus waiting for you here at 5:30 pm!",
     rideSecond:
       "It will bring you back to this other location\nonce the party is over at around 3 am",
-    gift: "Thank you for the sushi!\n\nWe are grateful for everything you've one to come celebrate with us. Your presence is the greatest gift.\n\nWe are hoping to make it to Japan in 2025 for our delayed honeymoon. If you want to help us with our dream trip, send us your contribution here:",
+    gift: "Thank you for the sushi!\n\nWe are grateful for everything you've done to come celebrate with us. Your presence is the greatest gift.\n\nWe are hoping to make it to Japan in 2025 for our delayed honeymoon. If you want to help us with our dream trip, send us your contribution here:",
     nameGift: "NAME",
   },
   es: {
