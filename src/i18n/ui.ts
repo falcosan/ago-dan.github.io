@@ -7,7 +7,7 @@ export const defaultLang = "en";
 
 export const ui = {
   en: {
-    hello: "Hello from Agostina and Daniele!",
+    hello: "Hello from Ago and Daniele!",
     description: "The wedding day is almost here...",
     church: "Church",
     hourChurch: "3:30 pm",
