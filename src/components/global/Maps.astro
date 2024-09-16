@@ -1,8 +1,8 @@
 ---
-const { source, text, link } = Astro.props;
+const { text, link, source, className } = Astro.props;
 ---
 
-<div class="flex justify-center">
+<div class:list={["flex justify-center", className]}>
   <a
     href={link}
     class="map aspect-square h-full w-full max-w-80 max-h-80 hover:underline underline-offset-4 cursor-pointer text-sage-300"

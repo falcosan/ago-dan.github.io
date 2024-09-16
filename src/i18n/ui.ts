@@ -7,8 +7,8 @@ export const defaultLang = "en";
 
 export const ui = {
   en: {
-    hello: "Hello!",
-    description: "It's Agostina and Daniele here",
+    hello: "Hello from Agostina and Daniele!",
+    description: "The wedding date is close",
     church: "Church",
     hourChurch: "3:30 pm",
     photo: "Photos",
@@ -19,10 +19,11 @@ export const ui = {
     rideSecond:
       "It will bring you back to this other location\nonce the party is over at around 3 am",
     gift: "Thank you for the sushi!\n\nWe are grateful for everything you've one to come celebrate with us. Your presence is the greatest gift.\n\nWe are hoping to make it to Japan in 2025 for our delayed honeymoon. If you want to help us with our dream trip, send us your contribution here:",
+    nameGift: "NAME",
   },
   es: {
-    hello: "Hola!",
-    description: "Te hablan Agostina y Daniele",
+    hello: "¡Hola desde Agostina y Daniele!",
+    description: "La fecha de nuestro casorio se acerca.",
     church: "Iglesia",
     hourChurch: "15.30",
     photo: "Fotos",
@@ -33,10 +34,11 @@ export const ui = {
     rideSecond:
       "Te traerá de vuelta a esta otra ubicación\nuna vez que termine la fiesta a las 3 am aprox.",
     gift: "¡Gracias por el sushi!\n\nEstamos muy agradecidos por todo lo que hiciste para venir a celebrar con nosotros. Tu presencia es el mejor regalo.\n\nEsperamos poder ir a Japón en 2025 para nuestra luna de miel postergada. Si querés ayudarnos a cumplir nuestro viaje soñado, podés enviarnos tu aporte acá:",
+    nameGift: "NOMBRE",
   },
   it: {
-    hello: "Ciao!",
-    description: "Siamo Agostina e Daniele",
+    hello: "Ciao da Agostina e Daniele!",
+    description: "La data del nostro matrimonio è vicina",
     church: "Chiesa",
     hourChurch: "15.30",
     photo: "Foto",
@@ -47,5 +49,6 @@ export const ui = {
     rideSecond:
       "Ti riporterà a quest'altro indirizzo\nuna volta terminata la festa, intorno alle 3 del mattino.",
     gift: "Grazie per il sushi!\n\nSiamo grati per tutto quello che hai fatto per venire a festeggiare con noi. La tua presenza è il regalo più grande.\n\nSperiamo di riuscire ad andare in Giappone nel 2025 per la nostra luna di miele posticipata. Se vuoi aiutarci a realizzare il nostro viaggio da sogno, inviaci il tuo contributo qui:",
+    nameGift: "NOME",
   },
 } as const;
