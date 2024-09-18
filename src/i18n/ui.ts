@@ -27,7 +27,7 @@ export const ui = {
     church: "Iglesia",
     hourChurch: "15.30",
     photo: "Fotos",
-    celebration: "Boda",
+    celebration: "Fiesta",
     hourCelebration: "18.30",
     rideFirst:
       "¿No tenés cómo ir al salón de fiestas?\nVa a haber un colectivo esperándote acá a las 17:30!",
