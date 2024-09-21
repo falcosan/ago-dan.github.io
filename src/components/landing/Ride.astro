@@ -7,7 +7,7 @@ const t = useTranslations(lang);
 ---
 
 <div class="relative mx-auto px-8 max-w-7xl py-24 md:px-12">
-  <div class="mx-auto text-center whitespace-pre-line">
+  <div class="mx-auto whitespace-pre-line text-center">
     <h3 class="text-7xl mb-8 antialiased">🚌</h3>
     <h3 class="text-3xl lg:text-4xl text-sage-500 font-bold mb-12">
       {t("rideFirst")}
@@ -22,9 +22,35 @@ const t = useTranslations(lang);
       {t("rideSecond")}
     </h3>
     <Maps
+      className={"mb-20"}
       text="Via Arenula, 56"
       link="https://maps.app.goo.gl/UXDKrXVanSRHrzeeA"
       source="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d742.5115905034077!2d12.474596542205052!3d41.89186001158878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDUzJzMwLjciTiAxMsKwMjgnMjguNiJF!5e0!3m2!1ses!2ses!4v1726426960286!5m2!1ses!2ses"
     />
+    <h3 class="text-2xl lg:text-3xl text-sage-500 font-bold">
+      {t("rideThird")}
+    </h3>
+    <h3
+      class="flex flex-col text-2xl lg:text-3xl text-sage-500 font-bold underline space-y-4 underline-offset-4 mb-12"
+    >
+      <a
+        class="mt-10 self-center cursor-pointer hover:opacity-90"
+        href="tel:+39063570">Radio Taxi: +39 063570</a
+      >
+      <a
+        class="self-center cursor-pointer hover:opacity-90"
+        href="tel:+39066645">Pronto Taxi: +39 066645</a
+      >
+    </h3>
+    <h3 class="text-2xl lg:text-3xl text-sage-500 font-bold mb-10">
+      {t("rideFourth")}
+    </h3>
+    <h3
+      class="flex flex-col text-2xl lg:text-3xl text-sage-500 font-bold space-y-2"
+    >
+      <span class="self-center">Free Now</span>
+      <span class="self-center">Uber</span>
+      <span class="self-center">Intaxi</span>
+    </h3>
   </div>
 </div>
